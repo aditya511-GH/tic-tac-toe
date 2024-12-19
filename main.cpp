@@ -20,7 +20,7 @@ int main() {
         computer = 'O';
         playerMove(spaces, player);
         drawBoard(spaces);
-        if(checkWinner(spaces, player, computer)){
+        if(checkWinner(spaces, player)){
             running = false;
             break;
         }
@@ -31,7 +31,7 @@ int main() {
         }
         computerMove(spaces, computer);
         drawBoard(spaces);
-        if(checkWinner(spaces, player, computer)){
+        if(checkWinner(spaces, player)){
             running = false;
             break;
         }
@@ -47,7 +47,7 @@ int main() {
         computer = 'X';
         computerMove(spaces, computer);
         drawBoard(spaces);
-        if(checkWinner(spaces, player, computer)){
+        if(checkWinner(spaces, player)){
             running = false;
             break;
         }
@@ -58,7 +58,7 @@ int main() {
         }
         playerMove(spaces, player);
         drawBoard(spaces);
-        if(checkWinner(spaces, player, computer)){
+        if(checkWinner(spaces, player)){
             running = false;
             break;
         }
